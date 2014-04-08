@@ -1,0 +1,29 @@
+# _config.yml
+
+# Server Config
+
+safe: true
+
+source: ./src
+destination: ./_site
+
+timezone: Europe/London
+
+future: false
+lsi: false
+pygments: false
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+
+# Site Config
+
+name: Birmingham Sports Awards 2014
+
+url: http://www.birminghamsportsawards.co.uk/alpha
+static: http://www.birminghamsportsawards.co.uk/alpha/static
+media: http://www.birminghamsportsawards.co.uk/alpha/media
+
+## Analytics
+
+google_analytics_id:

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <!--[if lte IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
+  <head>
+
+    {% include templates/prefetch.html %}
+    {% include templates/meta.html %}
+
+    <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.name }}</title>
+
+    {% include templates/favicon.html %}
+    {% include templates/css.html %}
+    {% include templates/javascript_head.html %}
+
+  </head>
+
+  <body {% if page.class %}class="{% for class in page.class %}{{ class }} {% endfor %}"{% endif %}>
+
+    <a href="#content" class="visuallyhidden focusable" title="Skip to Site Content" accesskey="s">Skip to page content</a>
+
+{% include templates/header.html %}
+
+{% include templates/banner.html %}
+
+<section role="main" class="wrapper">
+
+  <div class="wrapper__sub box cf">
+
+    <article class="grid ss1-ss4 ls1-ls8 box__large">
+      {{ content }}
+    </article>
+
+    <section class="grid ss1-ss4 ls9-ls12 box__large">
+
+      <h2 class="heading--sub">#BSA</h2>
+      <div style="height: 430px; width: 220px; background: #ccc;">
+      <p>Twitter Feed</p>
+      </div>
+    </section>
+
+  </div>
+
+</section>
+
+{% include templates/sponsors.html %}
+
+{% include templates/footer.html %}
+
+{% include templates/javascript_body.html %}
+
+  </body>
+</html>

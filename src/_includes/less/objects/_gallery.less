@@ -1,0 +1,78 @@
+/**
+ * Gallery
+ * Example:
+      <ul class="gallery"">
+        <li class="gallery__item">
+          <img src="example.jpg" alt="">
+        </li>
+      </ul>
+ *
+ */
+
+.gallery {
+  width: 100%;
+}
+
+  .gallery--header {
+    margin-bottom: 29px;
+  }
+
+  .gallery__item {
+    float: left;
+    display: block;
+    margin-bottom: 29px;
+    padding-left: 14.5px;
+    padding-right: 14.5px;
+    width: 50%;
+  }
+
+//  Remove left padding for right items
+  .gallery__item:nth-child(2n+1) {
+    padding-left: 0;
+  }
+
+//  Remove right padding for left items
+  .gallery__item:nth-child(2n+2) {
+    padding-right: 0;
+  }
+
+  .gallery__item img {
+    max-width: 100%;
+    height: inherit;
+  }
+
+  .lt-ie9 .gallery--image img {
+    width: 100%;
+  }
+
+@media screen and (min-width: 769px) {
+
+  .gallery__item {
+    width: 20.8882%;
+    //width: 136.4px;
+  }
+
+  //  Reset left padding for right items
+  .gallery__item:nth-child(2n+1) {
+    padding-left: 14.5px;
+  }
+
+  //  Remove left padding for right items
+  .gallery__item:nth-child(5n+1) {
+    padding-left: 0px;
+    width: 121.9px;
+  }
+
+  //  Reset right padding for left items
+  .gallery__item:nth-child(2n+2) {
+    padding-right: 14.5px;
+  }
+
+  //  Remove right padding for left items
+  .gallery__item:nth-child(5n+5) {
+    padding-right: 0;
+    //width: 121.9px;
+    width: 18.6676%;
+  }
+
+}

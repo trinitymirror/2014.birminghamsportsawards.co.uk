@@ -1,0 +1,27 @@
+.footer__main {
+  padding-top: 1em;
+  min-height: 5em;
+  border-top: 1px solid #ccc;
+  background-color: rgb(255,255,255);
+}
+
+.footer__main--menu > li {
+  padding-left: 8px;
+  border-bottom: 1px solid #ccc;
+  line-height: 2em;
+}
+
+@media screen and (min-width: 789px) {
+
+  .footer__main--menu > li {
+    padding: 0 1em;
+    border-bottom: none;
+    border-left: 1px solid #ccc;
+  }
+
+  .footer__main--menu > li:first-child {
+    border-left: none;
+    padding-left: 8px;
+  }
+
+}

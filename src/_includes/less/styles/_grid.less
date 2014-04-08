@@ -1,0 +1,265 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.box {
+  // Baseline/Gutter width
+  margin-bottom: 29px;
+}
+
+.box__large {
+  margin-bottom: 58px;
+}
+
+.wrapper {
+
+}
+
+.wrapper__sub {
+  position: relative;
+  margin: 0 auto;
+  //padding: 0 1em;
+  max-width: 1025px;
+}
+
+@media screen and (min-width: 481px) {
+  .wrapper__sub {
+    padding: 0 0;
+  }
+}
+
+/**
+ * This class is applied to all parent elements to be fitted
+ * to the grid.
+ */
+.grid {
+  float: left;
+  display: block;
+  padding-left: 14.5px;
+  padding-right: 14.5px;
+}
+
+/**
+ * Adds a line the height of the element on the left side
+ */
+.grid__seperator {
+  border-left: 1px solid #666;
+}
+
+/**
+ * Small Screen Grid
+ * In a mobile first fashion.
+ */
+
+.ss1,
+.ss2,
+.ss3,
+.ss4 {
+  width: 25.0%;
+}
+
+.ss1-ss2,
+.ss3-ss4 {
+  width: 50%;
+}
+.ss1-ss3,
+.ss2-ss4 {
+  width: 75%;
+}
+.ss1-ss4 {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .ss-hidden {
+    display: none;
+  }
+  .ss-no-padding {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/*
+ * Medium Screen
+ */
+@media screen and (min-width: 481px) {
+
+  .ms1,
+  .ms2,
+  .ms3,
+  .ms4,
+  .ms5,
+  .ms6 {
+    width: 16.6666666667%;
+  }
+
+  .ms1-ms2,
+  .ms2-ms3,
+  .ms3-ms4,
+  .ms4-ms5,
+  .ms5-ms6 {
+    width: 33.3333333333%;
+  }
+
+  .ms1-ms3,
+  .ms4-ms6 {
+    width: 50%;
+  }
+  .ms1-ms4,
+  .ms2-ms5,
+  .ms3-ms6 {
+    width: 66.6666666667%;
+  }
+
+  .ms1-ms5,
+  .ms2-ms6 {
+    width: 83.3333333334%;
+  }
+
+  .ms1-ms6 {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .ms-hidden {
+    display: none;
+  }
+
+  .ms-no-padding {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+}
+
+/*
+ * Large Screen
+ */
+@media screen and (min-width: 769px) {
+
+  .ls1,
+  .ls2,
+  .ls3,
+  .ls4,
+  .ls5,
+  .ls6,
+  .ls7,
+  .ls8,
+  .ls9,
+  .ls10,
+  .ls11,
+  .ls12 {
+    width: 8.33333333333%;
+  }
+
+  .ls1-ls2,
+  .ls2-ls3,
+  .ls3-ls4,
+  .ls4-ls5,
+  .ls5-ls6,
+  .ls6-ls7,
+  .ls7-ls8,
+  .ls8-ls9,
+  .ls9-ls10,
+  .ls10-ls11,
+  .ls11-ls12 {
+    width: 16.6666666667%;
+  }
+
+  .ls1-ls3,
+  .ls2-ls4,
+  .ls3-ls5,
+  .ls4-ls6,
+  .ls5-ls7,
+  .ls6-ls8,
+  .ls7-ls9,
+  .ls8-ls10,
+  .ls9-ls11,
+  .ls10-ls12 {
+    width: 25%;
+  }
+
+  .ls1-ls4,
+  .ls2-ls5,
+  .ls3-ls6,
+  .ls4-ls7,
+  .ls5-ls8,
+  .ls6-ls9,
+  .ls7-ls10,
+  .ls8-ls11,
+  .ls9-ls12 {
+    width: 33.3333333333%;
+  }
+
+  .ls1-ls5,
+  .ls2-ls6,
+  .ls3-ls7,
+  .ls4-ls8,
+  .ls5-ls9,
+  .ls6-ls10,
+  .ls7-ls11,
+  .ls8-ls12 {
+    width: 41.66667%;
+  }
+
+  .ls1-ls6,
+  .ls2-ls7,
+  .ls3-ls8,
+  .ls4-ls9,
+  .ls5-ls10,
+  .ls6-ls11,
+  .ls7-ls12 {
+    width: 50%;
+  }
+
+  .ls1-ls7,
+  .ls2-ls8,
+  .ls3-ls9,
+  .ls4-ls10,
+  .ls5-ls11,
+  .ls6-ls12 {
+    width: 58.33333334%
+  }
+
+  .ls1-ls8,
+  .ls2-ls9,
+  .ls3-ls10,
+  .ls4-ls11,
+  .ls5-ls12 {
+    width: 66.66666667%;
+  }
+
+  .ls1-ls9,
+  .ls2-ls10,
+  .ls3-ls11,
+  .ls4-ls12 {
+    width: 75%;
+  }
+
+  .ls1-ls10,
+  .ls2-ls11,
+  .ls3-ls12 {
+    width: 83.333333334%;
+  }
+
+  .ls1-ls11,
+  .ls2-ls12 {
+    width: 91.666666667%;
+  }
+
+  .ls1-ls12 {
+    width: 100%;
+  }
+
+  .ls-hidden {
+    display: none;
+  }
+
+}

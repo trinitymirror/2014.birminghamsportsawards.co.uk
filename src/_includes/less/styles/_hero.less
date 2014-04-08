@@ -1,0 +1,66 @@
+
+.hero {
+  position: relative;
+  margin-bottom: 3em;
+  border-bottom: 1px solid #ccc;
+  background-color: #eef0f3;
+}
+
+.hero__message {
+  display: inline;
+  margin: 0 0 0 0;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 2;
+  top: 0.3em;
+  left: 0.5em;
+}
+
+.hero__message, .hero__message > span {
+  background: rgb(169,169,169);
+  padding: 0.25em 0;
+  position: relative;
+  right: 0.5em;
+}
+
+span>span {
+  position: relative;
+  left: 0.25em;
+}
+
+.hero__image {
+  height: 13em;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% cover;
+}
+
+.hero__sponsor {
+  text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+
+  .hero__image {
+    height: 15em;
+  }
+
+  .hero__sponsor {
+    position: absolute;
+    top: 1em;
+    right: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    height: 13em; // Parent element - 2em
+    display: flex !important;  // This overrides the grid system
+    align-items: center;
+  }
+
+  .hero__sponsor > p {
+    margin-bottom: 0;
+    padding: 1em;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 6px;
+  }
+
+}

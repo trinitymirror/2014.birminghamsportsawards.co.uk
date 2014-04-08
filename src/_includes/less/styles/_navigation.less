@@ -1,0 +1,56 @@
+
+.navicon {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+
+  .navigation__main {
+    text-align: right;
+  }
+
+}
+
+.navigation__main a {
+  padding: 0 1em;
+  border-bottom: 1px solid @brand--blue;
+  background-color: @brand--blue-dark;
+  color: rgb(255,255,255);
+  line-height: 44px;
+}
+
+@media screen and (min-width: 769px) {
+
+  .navigation__main a {
+    padding: 0 1em;
+    border-bottom: none;
+    background-color: transparent;
+    line-height: 44px;
+    color: rgb(255,255,255);
+  }
+
+  .navigation__main > li > a {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    background-color: @brand--blue;
+    background-image: -moz-linear-gradient(top, @brand--blue 0%, @brand--blue-dark 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @brand--blue), color-stop(100%, @brand--blue-dark));
+    background-image: -webkit-linear-gradient(top, @brand--blue 0%, @brand--blue-dark 100%);
+    background-image: -o-linear-gradient(top, @brand--blue 0%, @brand--blue-dark 100%);
+    background-image: -ms-linear-gradient(top, @brand--blue 0%, @brand--blue-dark 100%);
+    background-image: linear-gradient(to bottom, @brand--blue 0%, @brand--blue-dark 100%);
+    background-repeat: repeat-x;
+    color: #fff;
+  }
+
+  .navigation__main > li > a:hover,
+  .navigation__main > li > a:focus {
+    background-color: @brand--blue-dark;
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.3s linear;
+       -moz-transition: background-position 0.3s linear;
+         -o-transition: background-position 0.3s linear;
+            transition: background-position 0.3s linear;
+  }
+
+}

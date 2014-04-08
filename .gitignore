@@ -1,0 +1,25 @@
+#  Birmingham Sports Awards 2014
+
+##  Site
+
+src/static/css/*.css
+
+##  Jekyll
+
+_site/
+beta/
+2014/
+
+##  NodeJS
+
+node_modules/
+npm-debug.log
+.grunt
+
+## Bower
+
+bower_components/
+
+##  API
+
+api/
