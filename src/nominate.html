@@ -1,6 +1,9 @@
 ---
 layout: content
 stylesheet:
+javascript:
+ - nominate
+ - lib/jquery.validate.min
 class: page__nominate
 
 title: Nominate
@@ -21,7 +24,7 @@ meta:
 
 <h2>Nomination Form</h2>
 
-<form action="{{ site.api }}/nominate/" method="post" name="nomination" id="nominate">
+<form action="{{ site.api }}/nominate/" method="post" name="nomination" id="nominate" novalidate>
 
   <label for="nomineesname">Nominees Name<sup class="required" title="Required">*</sup>:</label>
   <input name="nomineesname" id="nomineesname" type="text" size="42" placeholder="eg, Nominees Name" required>
@@ -33,7 +36,8 @@ meta:
   <input name="nomineesphone" id="nomineesphone" type="text" size="42" placeholder="eg, 0121 123 4567">
 
   <label for="award">Award Category: </label>
-  <select name="award" id="award">
+  <select name="award" id="award" required>
+    <option value="">Select an award below:</option>
     <option value="Lifetime Achievement Award">Lifetime Achievement Award</option>
     <option value="International Sportsperson of the Year">International Sportsperson of the Year</option>
     <option value="Professional Sportsman of the Year">Professional Sportsman of the Year</option>
@@ -49,8 +53,8 @@ meta:
     <option value="Community Award">Community Award</option>
   </select>
 
-  <label for="reason">I would like to nominate the nominee for this award because:<sup class="required" title="Required">&#8224;</sup>:</label>
-  <textarea name="reason" cols="33" rows="6" id="reason" placeholder="I would like to nominate the nominee for this award because:"></textarea>
+  <label for="reason">I would like to nominate the nominee for this award because<sup class="required" title="Required">&#8224;</sup>:</label>
+  <textarea name="reason" cols="33" rows="6" id="reason" placeholder="I would like to nominate the nominee for this award because..."></textarea>
 
   <label for="nominatorname">Your Name:<sup class="required" title="Required">*</sup></label>
   <input name="nominatorname" id="nominatorname" type="text" size="42" placeholder="eg, My Name" required>

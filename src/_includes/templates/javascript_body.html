@@ -2,7 +2,7 @@
 
 <!--  Global/Section JavaScript  -->
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="{{ site.static }}/js/lib/jquery.min.js"></script>
 
   <script src="{{ site.static }}/js/jquery.randombackground.min.js"></script>
 
@@ -33,7 +33,10 @@
 
 <script src="{{ site.static }}/js/global.js"></script>
 
-{% if page.javascript %}<script src="{{ site.static}}/js/{{ page.javascript }}.js"></script>
+{% if page.javascript %}
+{% for js in page.javascript %}
+<script src="{{ site.static}}/js/{{ js }}.js"></script>
+{% endfor %}
 {% endif %}
 
 {% include templates/analytics.html %}

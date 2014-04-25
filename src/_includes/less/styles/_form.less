@@ -20,7 +20,7 @@ input[type=url],
 input[type=password],
 textarea,
 select {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 //  Future-proof for responsive site
@@ -59,21 +59,102 @@ select:focus {
   border-color: @brand--blue;
 }
 
-//  Required
+/*select {
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-color: #fafafa;
+  background-image: url('/static/gui/select-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center right 3%;
+}*/
 
-  .required {
-    color: @brand--red-dark;
-  }
+//  Error /Required
+//
 
-//  Error
+.error,
+.required {
+  color: @brand--red-dark;
+  font-weight: normal;
+}
 
 label.error {
-  color: @brand--red-dark;
+  font-weight: normal;
 }
 
-//  Adds error colour to field
 input.error,
+input.error:focus,
+select.error,
 textarea.error {
-  outline: 0;
   border-color: @brand--red-dark;
 }
+
+input.valid,
+input.valid:focus,
+select.valid,
+select.valid:focus,
+textarea.valid {
+  border-color: @brand--red-dark;
+}
+
+/**
+   * Form Object
+
+
+   .form {}
+
+   .form-field__block > label {
+     display: block;
+   }
+
+    .form-field > label {
+     display: block;
+     margin-bottom: 0.5em;
+     font-weight: bold;
+    }
+    .form-field > input[type=text],
+    .form-field > input[type=email],
+    .form-field > input[type=url],
+    .form-field > input[type=password],
+    .form-field > select,
+    .form-field > textarea {
+      margin-bottom: 1em;
+      width: 100%;
+    }
+
+    [type="checkbox"] + label,
+    [type="radio"] + label {
+      display: inline-block;
+      margin-left: 1em;
+    }
+
+    [type="radio"] + label {
+      margin-right: 1em;
+    }
+
+
+   /**
+    * Form Style
+
+
+
+
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    select,
+    textarea {
+      padding: 0.5em;
+      border: 1px solid rgb(220,220,220);
+    }
+
+    input[type=text]:focus,
+    input[type=email]:focus,
+    input[type=url]:focus,
+    input[type=password]:focus,
+    textarea:focus,
+    select:focus {
+      outline: 0;
+      border-color: blue;
+    }
+   */

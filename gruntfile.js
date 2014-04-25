@@ -65,7 +65,9 @@ module.exports = function(grunt) {
    ,copy: {
       bower: {
         files: [
-          { expand: true, flatten: true, cwd: 'bower_components', src: ['html5shiv/dist/html5shiv.js'], dest: '<%= grunt.config.get("dest") %>/static/js/lib'}
+          { expand: true, flatten: true, cwd: 'bower_components', src: ['jquery/dist/jquery.min.js'], dest: '<%= grunt.config.get("dest") %>/static/js/lib'},
+          { expand: true, flatten: true, cwd: 'bower_components', src: ['html5shiv/dist/html5shiv.js'], dest: '<%= grunt.config.get("dest") %>/static/js/lib'},
+          { expand: true, flatten: true, cwd: 'bower_components', src: ['jquery.validation/dist/jquery.validate.min.js'], dest: '<%= grunt.config.get("dest") %>/static/js/lib'}
         ]
       }
     }
