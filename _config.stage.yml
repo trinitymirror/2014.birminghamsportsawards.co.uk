@@ -23,6 +23,7 @@ name: Birmingham Sports Awards 2014
 url: http://www.birminghamsportsawards.co.uk/alpha
 static: http://www.birminghamsportsawards.co.uk/alpha/static
 media: http://www.birminghamsportsawards.co.uk/alpha/media
+api: http://www.birminghamsportsawards.co.uk/alpha/api
 
 ## Analytics
 

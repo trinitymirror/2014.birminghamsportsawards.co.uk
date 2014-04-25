@@ -23,6 +23,7 @@ name: Birmingham Sports Awards 2014
 url:
 static: /static
 media: /media
+api: /api
 
 ## Analytics
 
