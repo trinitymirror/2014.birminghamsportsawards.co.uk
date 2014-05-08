@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /nominate/confirm/
+Disallow: /nominate/issue/
+Disallow: /404.html
