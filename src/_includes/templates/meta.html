@@ -1,7 +1,6 @@
 <!--  Meta Data  -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-{% if page.meta.keywords %}<meta name="keywords" content="{{ page.meta.keywords }}" />{% endif %}
-{% if page.meta.description %}<meta name="description" content="{{ page.meta.description }}" />{% endif %}
-{% if page.meta.author %}<meta name="author" content="{{ page.meta.author }}" />{% endif %}
+{% if page.meta.keywords %}<meta name="keywords" content="{% for keyword in page.meta.keywords %}{{ keyword }}, {% endfor %}">{% elsif site.meta.keywords %}<meta name="keywords" content="{% for keyword in site.meta.keywords %}{{ keyword }}, {% endfor %}">{% endif %}
+{% if page.meta.description %}<meta name="description" content="{{ page.meta.description }}">{% elsif site.meta.description %}<meta name="description" content="{{ site.meta.description }}">{% endif %}
+{% if page.meta.author %}<meta name="author" content="{{ page.meta.author }}">{% elsif site.meta.author %}<meta name="author" content="{{ site.meta.author }}">{% endif %}
