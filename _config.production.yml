@@ -20,10 +20,10 @@ rdiscount:
 
 name: Birmingham Sports Awards 2014
 
-url: /2014
-static: /2014/static
-media: /2014/media
-api: /2014/api
+url: http://www.birminghamsportsawards.co.uk/2014
+static: http://www.birminghamsportsawards.co.uk/2014/static
+media: http://www.birminghamsportsawards.co.uk/2014/media
+api: http://www.birminghamsportsawards.co.uk/2014/api
 
 ## Analytics
 
