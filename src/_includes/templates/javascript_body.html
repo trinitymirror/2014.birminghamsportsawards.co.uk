@@ -4,38 +4,11 @@
 
   <script src="{{ site.static }}/js/lib/jquery.min.js"></script>
 
-  <script src="{{ site.static }}/js/jquery.randombackground.min.js"></script>
-
-  <script>
-  $(document).ready(function() {
-
-  // To extend the default config settings
-  // pass a object as an argument for the init function
-  // eg. randomBackground.init({ images: 'image01.jpg', 'image02.jpg' });
-
-  randomBackground.init( { parent: '.hero__image', path: '{{ site.static }}/gui/hero/', images: ['jodie-stimpson.jpg', 'event_2013_001.jpg'] });
-
-});
-  </script>
-
-  <script>
-    $("#navicon").click(function () {
-      $("#js-nav__main").toggleClass("js-is-active");
-    });
-  </script>
-
-  <script>
-    $(".alert__close").on('click', function(e) {
-      e.preventDefault();
-      $(this).parent('#js-alert').addClass('hidden');
-    });
-  </script>
-
-<script src="{{ site.static }}/js/global.js"></script>
+  <script src="{{ site.static }}/js/global.js" async></script>
 
 {% if page.javascript %}
 {% for js in page.javascript %}
-<script src="{{ site.static}}/js/{{ js }}.js"></script>
+  <script src="{{ site.static}}/js/{{ js }}.js"></script>
 {% endfor %}
 {% endif %}
 
