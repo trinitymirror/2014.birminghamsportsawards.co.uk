@@ -17,18 +17,30 @@
 
 ### Setup Development Area
 
+Install required dependencies:
+
 ```
+bundle install
+npm install grunt-cli bower
 npm install
-gem install jekyll
+bower install
 ```
 
-### Run Development Server
+Run the development server:
 
 ```
 grunt
 ```
 
 Visit the url [localhost:3000](http://localhost:3000/) to view the site.
+
+### Deploy to staging server
+
+All commits and merges to the `stage` branch that pass our CI tests will be automaticly deployed to our production server.
+
+### Deploy to production server
+
+All commits and merges to the `master` branch that pass our CI tests will be automaticly deployed to our production server.
 
 ## Documentation
 
