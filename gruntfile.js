@@ -174,18 +174,6 @@ module.exports = function(grunt) {
       }
     }
 
-  // Deploy
-
-  ,'gh-pages': {
-    options: {
-      base: '<%= grunt.config.get("dest") %>',
-      branch: 'gh-pages',
-      add: true,
-      push: true
-    },
-    src: ['**/*', '!gruntfile.js', '!package.json', '!readme.md', '!_config.yml' ]
-  }
-
   });
 
   // Tasks
@@ -199,7 +187,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-config');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-notify');
