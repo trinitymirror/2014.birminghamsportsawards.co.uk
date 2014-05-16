@@ -1,6 +1,9 @@
 ---
 ---
 
+/* SVG Fallback for unsupported browsers */
+if(!Modernizr.svg){var imgs=$('img[data-fallback]');imgs.attr('src',imgs.data('fallback'));}
+
 /*
  *  randomBackground.js - v0.1.3
  *  Attach a random background image to an element from a user supplied list on page load.
