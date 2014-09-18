@@ -82,19 +82,19 @@ module.exports = function(grunt) {
    ,less: {
       development: {
         options: {
-        paths: ['src/static/css']
+          paths: ['src/static/css']
         }
        ,files: {
-        'src/static/css/global.css': ['src/_includes/less/global.less']
+          'src/static/css/global.css': ['src/_includes/less/global.less']
         }
       }
      ,production: {
         options: {
-        compress: true
-       ,paths: ['src/static/css']
+          compress: true
+         ,paths: ['src/static/css']
         }
        ,files: {
-        'src/static/css/global.css': ['src/_includes/less/global.less']
+          'src/static/css/global.css': ['src/_includes/less/global.less']
         }
       }
     }
@@ -154,7 +154,7 @@ module.exports = function(grunt) {
 
   // Optimise
 
-  ,imagemin: {
+   ,imagemin: {
       options: {
         optimizationLevel: 3
       },
