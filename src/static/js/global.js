@@ -2,7 +2,7 @@
 ---
 
 /* SVG Fallback for unsupported browsers */
-if(!Modernizr.svg){var imgs=$('img[data-fallback]');imgs.attr('src',imgs.data('fallback'));}
+(function($){if(!Modernizr.svg){$('img').each(function(){$(this).attr('src',$(this).data('fallback'));});}}(jQuery));
 
 /*
  *  randomBackground.js - v0.1.3
